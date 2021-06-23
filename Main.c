@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
 	char d = ' ';
 	if(argc < 4) {
 		errno = EINVAL;
-		printf("Input error\n");
+		printf("Please run in any one of the following formats:\n./project -c1 <file> <compressed-file-name>\n./project -c2 <file> <compressed-file-name>\n./project -uc1 <compressed-file> <uncompressed-file>\n./project -uc2 <compressed-file> <uncompressed-file>\n");
 		return errno;
 	}
 
